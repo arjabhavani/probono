@@ -426,6 +426,7 @@ a {
     height: 40px;
     text-align: center;
 }
+
 .bdr{
     width: 100%;
     display: flex;
@@ -636,6 +637,7 @@ a {
     letter-spacing: 0.48px;
    
 }
+
 .legal{
     width: 100%;
     display: flex;
@@ -775,8 +777,44 @@ a {
         justify-content: center;
         align-items: center;
     }
-
-
+    .hide-mob{
+        display: none;
+    }
+    .brand-box{
+        width: 27.33%;
+    }
+    .sign-up-holder{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sign-text, .subscribe{
+        width: 100%;
+    }
+    .emil-btn button{
+        width: 327px;
+    }
+    .emil-btn{
+        position: unset;
+        text-align: center;
+    }
+    .inp{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+    .subscribe{
+        padding-top: 30px;
+    }
+    .subscribe input{
+        width: 327px;
+    }
+    .sign-up{
+        padding: 50px 20px 50px 34px;
+        text-align: center;
+    }
+    .footer-holder{
+        width: 100%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
