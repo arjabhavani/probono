@@ -910,6 +910,10 @@ a {
 
     .sign-text, .subscribe {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .emil-btn button {
