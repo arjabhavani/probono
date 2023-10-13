@@ -742,6 +742,9 @@ a {
     font-size: 32px;
     color: rgba(28, 93, 197, 0.80);
 }
+.brand-holder{
+    overflow: hidden;
+}
 
 /* Small devices (phones, 575px and down) */
 @media (max-width: 575px) {
@@ -897,7 +900,7 @@ a {
     }
 
     .brand-img img {
-        width: 62px
+        width: 62px !important;
     }
 
     .sign-up-holder {
