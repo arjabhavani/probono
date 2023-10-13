@@ -53,6 +53,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 10px 0px 10px 0px;
 }
 
 .logo-sec {
@@ -251,7 +252,8 @@ a {
 .st-btn, .ft-bt {
     padding-top: 40px;
 }
-.center{
+
+.center {
     text-align: center;
 }
 
@@ -422,18 +424,19 @@ a {
 }
 
 .brand-img img {
-    width: 99px;
+    width: 99px !important;
     height: 40px;
     text-align: center;
 }
 
-.bdr{
+.bdr {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.advt{
+
+.advt {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -441,7 +444,8 @@ a {
     flex-direction: column;
     padding: 50px 0px 50px 0px;
 }
-.sign-up{
+
+.sign-up {
     width: 100%;
     background: #1C5DC5;
     display: flex;
@@ -450,33 +454,39 @@ a {
     flex-direction: row;
     padding: 50px 0px 50px 0px;
 }
-.sign-up-holder{
+
+.sign-up-holder {
     width: 1140px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.sign-text{
+
+.sign-text {
     width: 30%;
 }
-.sign-text h5{
+
+.sign-text h5 {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
 }
-.sign-text p{
+
+.sign-text p {
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
-.subscribe{
+
+.subscribe {
     width: 70%;
     text-align: right;
     position: relative;
 }
-.subscribe input{
+
+.subscribe input {
     width: 580px;
     height: 52px;
     border-radius: 100px;
@@ -488,12 +498,14 @@ a {
     border: none;
     padding-left: 19px;
 }
-.emil-btn{
+
+.emil-btn {
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.emil-btn button{
+
+.emil-btn button {
     width: 168px;
     height: 52px;
     background: #26A39E;
@@ -502,7 +514,8 @@ a {
     font-size: 18px;
     border-radius: 100px;
 }
-.footer{
+
+.footer {
     padding: 50px 0px 50px 0px;
     width: 100%;
     background: #10397B;
@@ -512,30 +525,35 @@ a {
     justify-content: center;
     align-items: center;
 }
-.footer-holder{
+
+.footer-holder {
     width: 1140px;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: row;
 }
-.f-logo{
+
+.f-logo {
     width: 10%;
 
 }
-.footer-left{
+
+.footer-left {
     width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.footer-right{
+
+.footer-right {
     width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.news{
+
+.news {
     width: 28%;
     display: flex;
     flex-direction: column;
@@ -544,37 +562,42 @@ a {
     padding-right: 10px;
     padding-left: 23px;
 }
-.contact{
+
+.contact {
     width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
-.contact h6{
+
+.contact h6 {
     font-size: 16px;
     color: #ffffff;
     font-weight: 700;
     line-height: 24px;
 }
-.contact p{
+
+.contact p {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 }
 
-.follow{
+.follow {
     width: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.follow-head{
+
+.follow-head {
     width: 100%;
 }
-.social-logos{
+
+.social-logos {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -582,7 +605,8 @@ a {
     align-items: center;
 
 }
-.social-logos p{
+
+.social-logos p {
     width: 32px;
     height: 32px;
     border-radius: 32px;
@@ -592,37 +616,43 @@ a {
     justify-content: center;
     margin-right: 8px;
 }
-.social-logos p i{
+
+.social-logos p i {
     color: #2D2D2D;
 }
-.follow h6{
+
+.follow h6 {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     line-height: 28px;
 }
-.certified{
+
+.certified {
     width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.cer-logo-holder{
+
+.cer-logo-holder {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.cer-logo{
+
+.cer-logo {
     width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.cer-logo-text{
+
+.cer-logo-text {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -630,32 +660,97 @@ a {
     justify-content: center;
     align-items: center;
 }
-.cer-logo-text p{
+
+.cer-logo-text p {
     color: #ffffff;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.48px;
-   
+
 }
 
-.legal{
+.legal {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.legal p{
+
+.legal p {
     color: #ffffff;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.48px;
     padding-top: 15px;
 }
+
+.mobile-color-img {
+    display: none;
+}
+
+.large-color-img {
+    display: block;
+}
+
+.mobile-sign-head {
+    display: none;
+}
+
+.lg-sign-head {
+    display: block;
+}
+
+.lg-email {
+    display: block;
+}
+
+.mobile-email {
+    display: none;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+/* .lg-footer {
+    display: block;
+} */
+.owl-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.owl-dots{
+    display: none !important;
+}
+.owl-theme .owl-nav{
+    margin-top: 0px !important;
+}
+.advt-carousel{
+    padding: 50px 0px 50px 0px;
+}
+.owl-stage-outer{
+    padding-left: 45px !important;
+}
+.owl-prev span, .owl-next span{
+    font-size: 32px;
+    color: rgba(28, 93, 197, 0.80);
+}
+
 /* Small devices (phones, 575px and down) */
 @media (max-width: 575px) {
     .who-we-img {
         width: 100%;
+    }
+
+    .hamburder {
+        width: 20%;
     }
 
     .who-we-img img {
@@ -663,7 +758,8 @@ a {
     }
 
     .gray-bar {
-        width: 95%;
+        width: 343px;
+        height: 20px;
     }
 
     .color-img img {
@@ -671,15 +767,22 @@ a {
     }
 
     .color-img {
-        width: 95%;
+        width: 343px;
+        height: 20px;
     }
 
     .logo {
-        width: 144px;
+        width: 70%;
+
+    }
+
+    .logo a img {
+        width: 124px;
     }
 
     .nav-bar {
-        width: 90%;
+        width: 100%;
+        padding: 10px 5px 10px 8px;
     }
 
     .sub-butn {
@@ -695,7 +798,8 @@ a {
     }
 
     .cart, .search, .login-mobile {
-        padding-right: 18px;
+        padding-right: 0px;
+        width: 33.33%;
     }
 
     /* .login i, .cart i, .search i, .login-mobile i{
@@ -777,43 +881,147 @@ a {
         justify-content: center;
         align-items: center;
     }
-    .hide-mob{
+
+    .hide-mob {
         display: none;
     }
-    .brand-box{
+
+    .brand-box {
         width: 27.33%;
     }
-    .sign-up-holder{
+
+    .brand-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+    }
+
+    .brand-img img {
+        width: 62px
+    }
+
+    .sign-up-holder {
         flex-direction: column;
         width: 100%;
     }
-    .sign-text, .subscribe{
+
+    .sign-text, .subscribe {
         width: 100%;
     }
-    .emil-btn button{
+
+    .emil-btn button {
         width: 327px;
     }
-    .emil-btn{
+
+    .emil-btn {
         position: unset;
         text-align: center;
     }
-    .inp{
-        width: 100%;
+
+    .inp {
+        width: 327px;
         text-align: center;
         padding-bottom: 16px;
     }
-    .subscribe{
+
+    .subscribe {
         padding-top: 30px;
     }
-    .subscribe input{
+
+    .subscribe input {
         width: 327px;
     }
-    .sign-up{
+
+    .sign-up {
         padding: 50px 20px 50px 34px;
         text-align: center;
     }
-    .footer-holder{
+
+    .footer-holder {
         width: 100%;
+    }
+
+    .what-heading h3 {
+        font-size: 24px;
+    }
+
+    .mobile-color-img {
+        display: block;
+        background: #DF6364;
+        width: 343px;
+        height: 57px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .large-color-img {
+        display: none;
+
+    }
+
+    .mobile-color-img p {
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .advt {
+        padding: 30px 0px 30px 0px;
+        margin-bottom: 28px;
+    }
+
+    .mobile-sign-head {
+        display: block;
+    }
+
+    .lg-sign-head {
+        display: none;
+    }
+
+    .lg-email {
+        display: none;
+    }
+
+    .mobile-email {
+        display: block;
+    }
+
+    .mobile-footer {
+        display: block;
+        width: 100%;
+    }
+    .social-logos{
+        justify-content: center;
+    }
+
+    .lg-footer {
+        display: none;
+    }
+
+    .footer-holder {
+        justify-content: center;
+    }
+
+    .social-logos p {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px
+    }
+    .footer-bdr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 32px;
+    }
+    .footer-border {
+        background: rgba(255, 255, 255, 0.20);
+        width: 327px;
+        height: 1px;
+        border-radius: 100px;
+    
     }
 }
 
@@ -1000,6 +1208,7 @@ a {
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
+
     }
 
     .logo-sec {
@@ -1064,7 +1273,7 @@ a {
     }
 
     .who-we-img img {
-        position: absolute;
+        position: unset;
         top: 0;
         right: -189px;
     }
