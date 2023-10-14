@@ -390,9 +390,7 @@ a {
     display: none;
 }
 
-.brand-holder {
-    width: 1140px;
-}
+
 
 .brand-box-holder {
     width: 100%;
@@ -1180,6 +1178,7 @@ a {
     .box {
         margin: 23px;
     }
+    
 
     .partner-img {
         padding-left: 66px;
@@ -1300,6 +1299,9 @@ a {
         flex-direction: column;
     }
 
+    .brand-holder {
+        width: 1140px;
+    }
     nav {
         display: flex;
         justify-content: center;
