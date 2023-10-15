@@ -270,6 +270,25 @@ a {
     height: 48px;
     border: 1px solid #1C5DC5;
 }
+.form-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-bt {
+    background-color: #ffffff;
+    color: #1C5DC5;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    width: 170px;
+    height: 48px;
+    border: 1px solid #1C5DC5;
+}
 
 .st-btn a button {
     background-color: #1C5DC5;
@@ -301,7 +320,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
 } */
-.what-heading h3 {
+.what-heading h3, .contact-holder h3 {
     color: #1C5DC5;
     font-size: 40px;
     text-align: center;
@@ -716,7 +735,7 @@ a {
 /* .lg-footer {
     display: block;
 } */
-.owl-nav{
+.owl-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -726,25 +745,128 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-.owl-dots{
+
+.owl-dots {
     display: none !important;
 }
-.owl-theme .owl-nav{
+
+.owl-theme .owl-nav {
     margin-top: 0px !important;
 }
-.advt-carousel{
+
+.advt-carousel {
     padding: 50px 0px 50px 0px;
 }
-.owl-stage-outer{
+
+.owl-stage-outer {
     padding-left: 45px !important;
 }
-.owl-prev span, .owl-next span{
+
+.owl-prev span, .owl-next span {
     font-size: 32px;
     color: rgba(28, 93, 197, 0.80);
 }
-.brand-holder{
+
+.brand-holder {
     overflow: hidden;
 }
+
+.contact-us {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.contact-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.f-fields{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* .f-fields label{
+    width: 95px;
+} */
+fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+}
+fieldset input{
+    width: 20px !important;
+    padding: 10px !important;
+    margin: 0px 5px 0px 5px !important;
+    border: transparent !important;
+}
+.f-16{
+    font-size: 16px;
+    font-weight: 600;
+}
+.f-18{
+    font-size: 28px;
+}
+input, label{
+    border: none;
+}
+.pd-rb{
+    padding: 5px 5px 10px 0px !important;
+}
+.f-fields input{
+    padding: 10px;
+    width: 180px;
+    border-radius: 4px;
+    height: 35px;
+    box-shadow: 1px 1px 5px 1px lightblue;
+}
+.p-b{
+    padding: 28px 0px 10px 0px;
+}
+.p-l{
+    padding-left: 24px;
+}
+.p-all{
+    padding: 16px 0px 20px 0px;
+}
+fieldset{
+    border: none;
+}
+.wd-100{
+    width: 100% !important;
+}
+.form-box{
+    background-color: #002257;
+    color: #ffffff;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 1px 1px 5px 1px lightblue;
+    border-radius: 15px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 /* Small devices (phones, 575px and down) */
 @media (max-width: 575px) {
@@ -999,7 +1121,8 @@ a {
         display: block;
         width: 100%;
     }
-    .social-logos{
+
+    .social-logos {
         justify-content: center;
     }
 
@@ -1016,6 +1139,7 @@ a {
         height: 40px;
         border-radius: 40px
     }
+
     .footer-bdr {
         width: 100%;
         display: flex;
@@ -1023,13 +1147,22 @@ a {
         align-items: center;
         padding-top: 32px;
     }
+
     .footer-border {
         background: rgba(255, 255, 255, 0.20);
         width: 327px;
         height: 1px;
         border-radius: 100px;
-    
+
     }
+    .f-fields{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1180,7 +1313,7 @@ a {
     .box {
         margin: 23px;
     }
-    
+
 
     .partner-img {
         padding-left: 66px;
@@ -1305,6 +1438,7 @@ a {
     .brand-holder {
         width: 1140px;
     }
+
     nav {
         display: flex;
         justify-content: center;
@@ -1393,5 +1527,15 @@ a {
     .m-l {
         margin-left: 76px;
     }
+
+    .contact-holder {
+        width: 1140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
