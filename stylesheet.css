@@ -15,6 +15,7 @@ header {
     background-color: #cccccc;
     width: 1140px;
     height: 20px;
+    position: relative;
 }
 
 .gray-bar p {
@@ -72,14 +73,14 @@ nav {
     flex-wrap: wrap;
 }
 
-.login, .cart, .search, .login-mobile {
+.login, .cart, .about, .login-mobile, .contact-u {
     color: #ffffff;
     padding-right: 48px;
     font-size: 14px;
     font-weight: 500;
 }
 
-.login i, .cart i, .search i, .login-mobile i {
+.login i, .cart i, .about i, .login-mobile i, .contact-u i {
     padding-right: 5px;
 }
 
@@ -270,7 +271,8 @@ a {
     height: 48px;
     border: 1px solid #1C5DC5;
 }
-.form-button{
+
+.form-button {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -278,6 +280,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .form-bt {
     background-color: #ffffff;
     color: #1C5DC5;
@@ -789,7 +792,8 @@ a {
     justify-content: center;
     align-items: center;
 }
-.f-fields{
+
+.f-fields {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -797,58 +801,72 @@ a {
     justify-content: flex-start;
     align-items: center;
 }
+
 /* .f-fields label{
     width: 95px;
 } */
-fieldset{
+fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0px;
 }
-fieldset input{
+
+fieldset input {
     width: 20px !important;
     padding: 10px !important;
     margin: 0px 5px 0px 5px !important;
     border: transparent !important;
 }
-.f-16{
+
+.f-16 {
     font-size: 16px;
     font-weight: 600;
 }
-.f-18{
+
+.f-18 {
     font-size: 28px;
 }
-input, label{
+
+input, label {
     border: none;
+    padding: 10px 10px 10px 0px;
 }
-.pd-rb{
-    padding: 5px 5px 10px 0px !important;
-}
-.f-fields input{
+
+.f-fields input {
     padding: 10px;
-    width: 180px;
+    width: 100%;
     border-radius: 4px;
     height: 35px;
     box-shadow: 1px 1px 5px 1px lightblue;
+    margin-bottom: 15px;
 }
-.p-b{
+
+.p-b30 {
+    padding-bottom: 30px;
+}
+
+.p-b {
     padding: 28px 0px 10px 0px;
 }
-.p-l{
+
+.p-l {
     padding-left: 24px;
 }
-.p-all{
+
+.p-all {
     padding: 16px 0px 20px 0px;
 }
-fieldset{
+
+fieldset {
     border: none;
 }
-.wd-100{
+
+/* .wd-100{
     width: 100% !important;
-}
-.form-box{
+} */
+.form-box {
     background-color: #002257;
     color: #ffffff;
     width: 55%;
@@ -859,12 +877,232 @@ fieldset{
     box-shadow: 1px 1px 5px 1px lightblue;
     border-radius: 15px;
 }
-form{
+
+form {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.close-button i {
+    color: black;
+    font-size: 16px;
+}
+
+.close-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+
+}
+
+/* about page css */
+.about-banner {
+    width: 100%;
+    background: url(images/banner1.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-size: cover;
+}
+.contact-banner {
+    width: 100%;
+    background: url(images/who.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-size: cover;
+}
+
+.about-banner h2, .contact-banner h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.about-banner p, .contact-banner p {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-banner .heading, .contact-banner .heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-second-sec, .about-third-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.about-second-sec .why-we-diff {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-second-sec{
+    background: #F8F8F8;
+}
+.why-we-left, .why-we-right{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.why-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.why-text h2, .chose-text h2{
+    color: #1C5DC5;
+    font-size: 35px;
+    padding-bottom: 24px !important;
+}
+.why-text p, .chose-text p{
+    color: #404040;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.why-text .bdr{
+    justify-content: flex-start !important;
+}
+.why-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.why-box-icon{
+    width: 20%;
+}
+.why-box-icon img{
+    width: 77px;
+}
+.why-box-para{
+    width: 80%;
+}
+.why-right-img{
+    width: 100%;
+}
+
+.chose-plan-sec{
+    width: 1320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.chose-text{
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+.plan-card-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plan-card{
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin: 0px 20px 20px 0px;
+    padding: 30px 31px;
+}
+.m-b{
+    margin-bottom: 30px;
+}
+.card-head span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #18304B;
+    margin-bottom: 14px !important;
+}
+
+.card-text, .card-head {
+    width: 100%;
+    text-align: center;
+}
+.card-head h4{
+    color: #1C5DC5;
+    font-size: 30px;
+    font-weight: 700;
+}
+.card-head p{
+    color: #76787A;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    font-style: italic;
+}
+.card-text p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #76787A;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.card-text a button{
+    background-color: #ffffff;
+    width: 170px;
+    height: 48px;
+    color: #1C5DC5;
+    border-radius: 100px;
+    border: 1px solid #1C5DC5;
+    text-align: center;
+    font-size: 16px;
+    padding: 13px 44px;
+    font-weight: 500;
+}
+.card-text a button:hover{
+    background-color: #1C5DC5;
+    color: #ffffff;
 }
 
 
@@ -922,7 +1160,7 @@ form{
         display: none;
     }
 
-    .cart, .search, .login-mobile {
+    .cart, .about, .login-mobile, .contact-u {
         padding-right: 0px;
         width: 33.33%;
     }
@@ -1155,14 +1393,24 @@ form{
         border-radius: 100px;
 
     }
-    .f-fields{
+
+    .f-fields {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    .why-we-left, .why-we-right{
+        width: 100%;
+    }
+    .plan-card{
+        width: 100%;
+    }
+    /* .search{
+        display: none;
+    } */
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1306,7 +1554,7 @@ form{
         justify-content: flex-start;
     }
 
-    .login, .cart, .search, .login-mobile {
+    .login, .cart, .about, .login-mobile, .contact-u {
         padding-right: 18px;
     }
 
@@ -1321,6 +1569,12 @@ form{
 
     .part-para {
         padding: 0px 15px 0px 20px;
+    }
+    .why-we-left, .why-we-right{
+        width: 100%;
+    }
+    .plan-card{
+        width: 50%;
     }
 }
 
@@ -1422,6 +1676,15 @@ form{
 
     .banner {
         background-size: cover;
+    }
+
+    .about-second-sec .why-we-diff {
+        width: 1140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -1529,6 +1792,15 @@ form{
     }
 
     .contact-holder {
+        width: 1140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-second-sec .why-we-diff {
         width: 1140px;
         display: flex;
         flex-direction: row;
