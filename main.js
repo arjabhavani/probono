@@ -17,26 +17,29 @@ $(document).ready(function () {
     })
     $(".close-button").on('click', function () {
         console.log('it is working')
-        $('.top-advt').remove()
+        $('.top-advt').remove();
     });
+    $(".side-close-btn").on('click', function () {
+        $(".drop-down-nav").removeClass('active');
+    });
+    $('.hamburger').on('click', function(){
+        console.log('it is working')
+        $(".drop-down-nav").addClass('active');
+    })
 
     $('.form-bt').on('click', function () {
-        var value = $('#name').val();
-        // alert(value);
-        console.log(value)
-        var value = $('#phone').val();
-        // alert(value);
-        console.log(value)
-        var value = $('#email').val();
-        // alert(value);
-        console.log(value)
-        var value = $('#city').val();
-        // alert(value);
-        console.log(value)
-        var value = $('#email').val();
-        // alert(value);
-        console.log(value)
+        var name = $('#name').val();
+        console.log(name)
+        var phone = $('#phone').val();
+        console.log(phone)
+        var email = $('#email').val();
+        console.log(email)
+        var city = $('#city').val();
+        console.log(city)
+        var country = $('#country').val();
+        console.log(country)
     });
+
 
 });
 

@@ -1,3 +1,6 @@
+/* html{
+    font-size: 30px;
+} */
 * {
     padding: 0;
     margin: 0;
@@ -104,8 +107,11 @@ nav {
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+ul, li{
+    list-style: none;
 }
 
 .banner {
@@ -157,7 +163,7 @@ a {
     width: 181px;
 } */
 .read-btn a {
-    color: #1C5DC5;
+    color: #1C5DC5 !important;
     width: 240px;
     height: 52px;
     padding: 18px;
@@ -179,7 +185,7 @@ a {
 }
 
 .view-btn a {
-    color: #1C5DC5;
+    color: #1C5DC5 !important;
     width: 240px;
     height: 52px;
     padding: 18px;
@@ -901,6 +907,18 @@ form {
     right: 4px;
 
 }
+.side-close-btn{
+    position: absolute;
+    top: 160px !important;
+    right: 0px !important;
+    left: 180px !important;
+    justify-content: flex-start;
+}
+.side-close-btn i{
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
 
 /* about page css */
 .about-banner {
@@ -1104,7 +1122,80 @@ form {
     background-color: #1C5DC5;
     color: #ffffff;
 }
-
+/* hamburger dropdown */
+.drop-down-nav{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1C5DC5;
+    z-index: 9;
+    display: none;
+}
+.drop-down-nav.active{
+    display: block;
+}
+.side-menu-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 144px 0px 0px 220px;
+}
+.side-menu-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.side-logo{
+    width: 100%;
+    height: 122px;
+}
+.side-logo a img{
+    width: 170px;
+}
+.clr-wh{
+    background-color: #ffffff !important;
+}
+.mega-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* padding: 0px 0px 0px 174px; */
+}
+.mega-menu-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.menu-cards{
+    width: 33.33%;
+}
+.menu-head h3{
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+.m-b-10{
+    margin-bottom: 10px;
+}
+.menu-list a{
+    font-size: 16px;
+}
+.white-under-line{
+    border-bottom: 2px solid #E5E5E5;
+    padding: 10px 0;
+    width: fit-content;
+    display: inline-block;
+}
 
 /* Small devices (phones, 575px and down) */
 @media (max-width: 575px) {
@@ -1112,7 +1203,7 @@ form {
         width: 100%;
     }
 
-    .hamburder {
+    .hamburger {
         width: 20%;
     }
 
