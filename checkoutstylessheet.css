@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.have-coupon-box{
+    background: #f4f6f7!important;
+    width: 769px;
+    height: 50px;
+    border-radius: 6px 6px 6px 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.have-coupon-box p, .have-coupon-box p a{
+    color: #1C5DC5 !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.coupon-form-div{
+    display: none;
+}
+.coupon-form-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.checkout-coupon-form-holder{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.checkout-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.billing-head{
+    padding-bottom: 10px;
+}
+.billing-head h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1C5DC5;
+}
+.checkout-inbox a i{
+    background: #e8f0ff !important;
+    color: #1C5DC5 !important;
+}
+.cart-check-icon a i:hover, .checkout-inbox a i:hover, .cart-payment-icon a i {
+    background: #1C5DC5 !important;
+    color: #ffffff !important;
+}
+.required{
+    visibility: visible;
+    color: orange;
+    text-decoration: none;
+}
+.billing-form-input-item input, .cars, .aditional-message-fields textarea, .coupon-form-div input{
+    background: #f4f6f7!important;
+    width: 100%;
+    outline: none;
+    padding: 20px 8px 11px 8px !important;
+    border: 1px solid #e2e4e9 !important;
+    border-radius: 5px;
+}
+.billing-form-input-item label, .aditional-message-fields label{
+    font-size: 12px;
+    line-height: 24px;
+}
+.billing-form-fields{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.additional-info-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.aditional-message-fields{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aditional-head h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.coupon-form-div button{
+    color: #ffffff;
+    width: 132px;
+    height: 53px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #1C5DC5;
+    border: none;
+    border-radius: 6px;
+}
+.coupon-form-div h5{
+    padding: 12px 0px 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.mb-45{
+    margin-bottom: 45px;
+}
+.p-p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 5px;
+}
+.p-p-h{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+.pl-150{
+    padding-left: 150px;
+}

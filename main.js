@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('#owl-carousel-one').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
@@ -16,16 +16,23 @@ $(document).ready(function () {
         }
     })
     $(".close-button").on('click', function () {
-        console.log('it is working')
         $('.top-advt').remove();
     });
     $(".side-close-btn").on('click', function () {
         $(".drop-down-nav").removeClass('active');
     });
-    $('.hamburger').on('click', function(){
-        console.log('it is working')
+
+    $('.hamburger').on('click', function () {
         $(".drop-down-nav").addClass('active');
-    })
+    });
+    $('.search').on('click', function () {
+        $(".search-popup").show();
+        $(".search").css('background', '#10397B');
+    });
+    $(".search-close-btn").on('click', function () {
+        $(".search-popup").hide();
+        $(".search").css('background', 'none');
+    });
 
     $('.form-bt').on('click', function () {
         var name = $('#name').val();
@@ -40,7 +47,26 @@ $(document).ready(function () {
         console.log(country)
     });
 
+    $('.showcoupon').on('click', function () {
+        $(".coupon-form-div").toggle();
+    });
 
+    $('#owl-carousel-two').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
 });
 
 

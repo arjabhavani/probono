@@ -57,7 +57,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px 0px 10px 0px;
+    /* padding: 10px 0px 10px 0px; */
 }
 
 .logo-sec {
@@ -78,10 +78,11 @@ nav {
 
 .login, .cart, .about, .login-mobile, .contact-u, .search {
     color: #ffffff;
-    padding-right: 25px;
     font-size: 14px;
     font-weight: 500;
+    padding: 28px 13px 28px 13px;
 }
+
 
 .login i, .cart i, .about i, .login-mobile i, .contact-u i, .search i {
     padding-right: 5px;
@@ -765,6 +766,17 @@ ul, li {
     align-items: center;
     justify-content: space-between;
 }
+#owl-carousel-two  .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .owl-dots {
     display: none !important;
@@ -930,14 +942,14 @@ form {
     justify-content: flex-start;
 }
 
-.side-close-btn i {
+.side-close-btn i, .search-close-btn i{
     color: #ffffff;
     font-size: 18px;
     cursor: pointer;
 }
 
 /* about us page css */
-.about-banner {
+.about-sec {
     width: 100%;
     background: url(images/banner1.jpg);
     display: flex;
@@ -949,7 +961,7 @@ form {
     background-size: cover;
 }
 
-.about-sec {
+.contact-about-sec {
     width: 100%;
     background: url(images/who.png);
     display: flex;
@@ -1328,7 +1340,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0px 24px 64px -8px rgba(1, 30, 63, 0.2);
+   
 }
 
 .cart-payment-left {
@@ -1339,16 +1351,18 @@ form {
     justify-content: space-between;
     background: #ffffff;
     padding: 32px 32px 32px 32px;
-
+    box-shadow: 0px 24px 64px -8px rgba(1, 30, 63, 0.2);
 }
 
+.cart-steps {
+    margin-bottom: 20px;
+}
 .cart-icon-holder, .cart-steps {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .h-line {
@@ -1385,10 +1399,10 @@ form {
 
 .cart-steps-container {
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .steps-item h4 span {
@@ -1515,12 +1529,12 @@ form {
 
 .cart-product-right {
     width: 30%;
+    height: 800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     background: #1C5DC5;
-    box-shadow: 0px 24px 64px -8px rgba(1, 30, 63, 0.2);
     padding: 32px 16px 32px 16px;
 }
 
@@ -1677,12 +1691,43 @@ form {
     border: 1px solid rgba(0, 0, 0, .1) !important;
     border-collapse: collapse;
 }
-/* .t-right{
-    text-align: right;
+/* search bar popup styles */
+.search-popup{
+    width: 100%;
+    position: fixed;
+    top: 203px;
+    left: 0;
+    background: #10397B;
+    display: none;
+    padding-bottom: 63px;
+    z-index: 9;
 }
-.t-left{
-    text-align: left;
-} */
+.inner-search-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b-b{
+    border-bottom: 1px solid #ffffff;
+}
+.search-close-btn{
+    width: 53%;
+    text-align: right;
+    padding-top: 20px;
+}
+.search-popup .search-input-field input::placeholder {
+    color: #ffffff !important;
+}
+.search-popup .search-input-field input{
+    background: none !important;
+    border: none;
+    outline: none;
+    width: 550px;
+    color: #ffffff;
+}
+
 
 /* Small devices (phones, 575px and down) */
 @media (max-width: 575px) {
@@ -1723,7 +1768,7 @@ form {
 
     .nav-bar {
         width: 100%;
-        padding: 10px 5px 10px 8px;
+        /* padding: 10px 0 10px 0; */
     }
 
     .sub-butn {
@@ -2005,66 +2050,31 @@ form {
     .menu-cards {
         width: 100%;
     }
+    .search-close-btn{
+        width: 100%;
+        text-align: right;
+        padding-top: 20px;
+        padding-right: 27px;
+    }
+    .search-input-field{
+        width: 50%;
+    }
+    .search-popup .search-input-field input{
+        width: 150px;
+    }
+    .search-popup{
+        padding-bottom: 29px;
+    }
+    .menu-sec{
+        display: none;
+    }
+    .cart-payment-left, .cart-product-right{
+        width: 100%;
+    }
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
-    .who-we-img {
-        width: 100%;
-    }
 
-    .who-we-img img {
-        width: 100%;
-    }
-    .gray-bar{
-        width: 100%;
-    }
-    .color-img img{
-        width: 100%;
-    }
-    .login-mobile{
-        display: block;
-    }
-    .login{
-        display: none;
-    }
-    .cart, .search, .login-mobile{
-        padding-right: 18px;
-    }
-    /* .login i, .cart i, .search i, .login-mobile i{
-        padding-left: 5px;
-    } */
-/* .banner{
-        background-size: auto;
-    }
-    .read-more-btns{
-        width: 100%;
-    }
-    .heading{
-        width: 100%;
-    }
-    .heading h1{
-        padding: 62px 30px 30px 30px;
-    }
-    .read-btn, .view-btn{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    } */
-/* .who-we-img img{
-        left: 0;
-    } */
-/* .box-holder{
-        width: 100%;
-    }
-    .what-holder{
-        width: 100%;
-    } */
-/* } */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait)
 
@@ -2283,6 +2293,10 @@ form {
         justify-content: center;
         align-items: center;
     }
+   .what-holder .owl-item{
+    width: 310px !important;
+    height: 500px !important;
+   }
 
 }
 

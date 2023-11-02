@@ -70,6 +70,18 @@
                 </div>
             </div>
         </nav>
+        <div class="search-popup active2">
+            <div class="inner-search-container">
+                <div class="search-close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="search-input-field b-b">
+                    <label for=""></label>
+                    <input type="text" name="search" id="search" placeholder="Search...">
+                    <a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
         <div class="drop-down-nav">
             <div class="side-menu-container">
                 <div class="side-menu-content">
@@ -203,37 +215,44 @@
                     <div class="border "></div>
                 </div>
             </div>
-            <div class="box-holder">
-                <div class="box">
-                    <img src="images/what-box-1.png" alt="box img" class="img-fluid">
-                    <div class="box-text">
-                        <h5>NEWS</h5>
-                        <p>Pro Bono News is Australia’s largest and most respected news service for the social economy.
-                            Browse the latest news stories here to stay up-to-date about the sector.</p>
-                        <div class="view-button st-btn">
-                            <a href="#"><button>View latest news</button></a>
+            <div id="owl-carousel-two" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <img src="images/what-box-1.png" alt="box img" class="img-fluid">
+                        <div class="box-text">
+                            <h5>NEWS</h5>
+                            <p>Pro Bono News is Australia’s largest and most respected news service for the social
+                                economy.
+                                Browse the latest news stories here to stay up-to-date about the sector.</p>
+                            <div class="view-button st-btn">
+                                <a href="#"><button>View latest news</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/what-box-2.png" alt="box img" class="img-fluid">
-                    <div class="box-text">
-                        <h5>CAREERS</h5>
-                        <p>Pro Bono Careers is more than simply a jobs board. See the latest job opportunities,
-                            volunteer roles, and browse through upskilling personal and professional services.</p>
-                        <div class="view-button st-btn">
-                            <a href="#"><button>Current opportunities</button></a>
+                <div class="item">
+                    <div class="box">
+                        <img src="images/what-box-2.png" alt="box img" class="img-fluid">
+                        <div class="box-text">
+                            <h5>CAREERS</h5>
+                            <p>Pro Bono Careers is more than simply a jobs board. See the latest job opportunities,
+                                volunteer roles, and browse through upskilling personal and professional services.</p>
+                            <div class="view-button st-btn">
+                                <a href="#"><button>Current opportunities</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/what-box-3.png" alt="box img" class="img-fluid">
-                    <div class="box-text">
-                        <h5>RESOURCES</h5>
-                        <p>Pro Bono Australia has a variety of capacity building resources, ranging from grant
-                            opportunities, the largest NFP directory Guide to Giving, and our Impact 25 Awards.</p>
-                        <div class="view-button st-btn">
-                            <a href="#"><button>Explore resources</button></a>
+                <div class="item">
+                    <div class="box">
+                        <img src="images/what-box-3.png" alt="box img" class="img-fluid">
+                        <div class="box-text">
+                            <h5>RESOURCES</h5>
+                            <p>Pro Bono Australia has a variety of capacity building resources, ranging from grant
+                                opportunities, the largest NFP directory Guide to Giving, and our Impact 25 Awards.</p>
+                            <div class="view-button st-btn">
+                                <a href="#"><button>Explore resources</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,7 +289,7 @@
                 </div>
             </div>
             <div class="advt-carousel">
-                <div class="owl-carousel owl-theme">
+                <div id="owl-carousel-one" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="brand-img">
                             <img src="images/brand-1.png" alt="brand logo" class="img-fluid">
